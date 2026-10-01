@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ⚛️ Next.js Modern App - App Router, React & Tailwind CSS
 
-## Getting Started
+Aplicação Frontend moderna desenvolvida com **Next.js (App Router)**, **React**, **TypeScript** e **Tailwind CSS**, demonstrando boas práticas de componentização, roteamento avançado e renderização otimizada.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tecnologias & Bibliotecas
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router, Server & Client Components)
+- **Biblioteca UI:** [React](https://react.dev/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/) & PostCSS
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/) (Tipagem estrita e DTOs de interface)
+- **Ícones & Tipografia:** Next Font (`Inter` custom font optimization)
+
+---
+
+## 🏛️ Arquitetura de Pastas (App Router)
+
+```text
+src/
+├── app/
+│   ├── (main)/          # Route Group para isolamento de layouts
+│   ├── globals.css      # Estilização global e diretivas Tailwind
+│   ├── layout.tsx       # Root layout com fonts e metadados SEO
+│   └── page.tsx         # Página principal / Home
+├── components/          # Componentes modulares e reutilizáveis
+│   └── usuario/         # Módulo e componentes de gestão de usuários
+├── interface/           # Contratos e tipos TypeScript
+├── service/             # Camada de consumo de serviços e APIs
+└── types/               # Tipagens globais da aplicação
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Principais Características
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- ⚡ **Next.js App Router:** Aproveitamento da arquitetura de rotas baseada em sistema de arquivos e suporte nativo a SSR e RSC.
+- 🎨 **Tailwind CSS Utility-First:** Interface responsiva, moderna e de alta fidelidade visual.
+- 🧩 **Componentização Limpa:** Separação clara entre camada visual, lógica de consumo de APIs e interfaces de tipagem.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Como Executar Localmente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Pré-requisitos
+- Node.js (v18+)
+- Gerenciador de pacotes npm, pnpm ou yarn
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Passos
 
-## Deploy on Vercel
+1. **Clone o repositório:**
+   ```bash
+   git clone git@github.com:leandroArraes/estudoNextJs.git
+   cd estudoNextJs
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   # ou pnpm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+   Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+4. **Gerar build de produção:**
+   ```bash
+   npm run build
+   npm run start
+   ```
+
+---
+
+## 👨‍💻 Autor
+
+**Leandro Arraes**
+- LinkedIn: [linkedin.com/in/leandroarraes](https://www.linkedin.com/in/leandroarraes/)
+- GitHub: [@leandroArraes](https://github.com/leandroArraes)
+- E-mail: [leandro.arraes.182@gmail.com](mailto:leandro.arraes.182@gmail.com)
